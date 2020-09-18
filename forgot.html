@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" type="text/css" href="login.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["uname"].value;
+  var y = document.forms["myForm"]["pass"].value;
+   if (x == "" || x == null) {
+    alert("Username must be filled out","Hello world"); 
+	return false;// confirm // prompt
+  }
+  if (y == "" || y == null) {
+    alert("Password must be filled out","Hello world"); 
+	return false;// confirm // prompt
+  }
+  alert("Username:"+x+ " Password:" +y);
+}
+</script>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Placement Preparation Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="./register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li class="active"><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="sidenav">
+         <div class="login-main-text">
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Amrita-vishwa-vidyapeetham-color-logo.png"/>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form name="myForm" onsubmit="return validateForm()" method="post" action="./index.html">
+                  <div class="form-group">
+                     <label>Email</label>
+                     <input type="text" class="form-control" name="uname" placeholder="User Name">
+                  </div>
+				   <div class="form-group">
+                     <label>New Password</label>
+                     <input type="password" class="form-control" name="pass" placeholder="New Password">
+                  </div>
+				   <div class="form-group">
+                     <label>Re-New Password</label>
+                     <input type="password" class="form-control" name="spass" placeholder="Re-New Password">
+                  </div>
+                  <button type="submit" class="btn btn-black">Create New PassWord</button>
+               </form>
+            </div>
+         </div>
+      </div>
+	  </body>
+	  </html>
