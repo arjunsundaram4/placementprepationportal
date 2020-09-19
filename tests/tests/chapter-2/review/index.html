@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.head{
+  background-color: #77DD76;
+}
+.body{
+  background-color: #FBE9B9;
+}
+
+
+</style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample Quiz</title>
+    <meta name="title" content="This is a sample  quiz">
+    <meta name="twitter:title" content="This is a sample  quiz">
+    <meta property="og:title" content="This is a sample  quiz">
+    <meta name="description" content="This test reviews what you have learnt in Chapter till now . Answer the questions as best as you can.">
+    <meta property="og:description" content="This test reviews what you have learnt in Chapter till now. Answer the questions as best as you can.">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../resources/images/padt.ico">
+
+    <meta name="keywords" content="PennDOT, Driver Manual, Tests, Practice, Exercises" lang="en">
+    <meta name="language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:site_name" content="sethclydesdale.github.io">
+    <meta property="og:url" content="https://sethclydesdale.github.io/pa-driver-tests/tests/chapter-2/review/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sethclydesdale.github.io/pa-driver-tests/resources/images/padt-thumb.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@SethC1995">
+
+    <link rel="stylesheet" href="../../../resources/stylesheet.min.css">
+    <script src="../../../resources/ga.js" async></script>
+  </head>
+
+  <body class="body">
+    
+    <header class="head">
+      <h1><a href="fun.html" id="home-link">Home</a></h1>
+      
+    </header>
+    
+    <div id="content">
+      <div id="exercise" class="content-block">
+        <h2 id="exercise-title" class="center">This is a sample test</h2>
+        <div id="quiz-result"></div>
+        <div id="quiz-zone" class="clear"></div>
+        <div id="quiz-timer" class="center"></div>
+      </div>
+    </div>
+    
+    
+    
+    <script src="../../../resources/easytimer.min.js"></script>
+    <script src="../../../resources/ezquiz.min.js"></script>
+    <script src="../../../resources/javascript.min.js"></script>
+    <script>EZQuiz.generate({
+      info : 'There is no negative marking for the quiz',
+
+      quiz : [
+        {
+          question : 'All elements are identified by their __ and are marked up using either start tags and end tags or self-closing tags.',
+          
+          answers : [
+            'attribute name',
+            '+tag name',
+            'class name',
+            'none of the mentioned'
+          ]
+        },
+        
+        {
+          question : 'The __ element represents a span of text that is isolated from its surroundings for the purposes of bidirectional text formatting.',
+          
+          answers : [
+            'b',
+            '+bdi',
+            'bdo',
+            'base'
+          ]
+        },
+        
+        {
+          question : 'The interactive element audio with the attribute controls must not appear as a descendant of which element?',
+          answers:[
+            'a',
+            ' button',
+            'audio',
+            '+both a and button'
+          ]
+        },
+        
+        {
+          question : ' A __ element must have a start tag but must not have an end tag.',
+         
+          answers : [
+            'details',
+            '+command',
+            'code',
+            'both details and command'
+          ]
+        },
+        
+        {
+          question : 'Which element(s) represents a section of a document that links to other documents?',
+          
+          answers : [
+            'Navigation',
+            'anchor tag',
+            '+Nav',
+            'option'
+          ]
+        },
+        
+        
+        
+       
+ 
+      ]
+    });</script>
+  </body>
+</html>
