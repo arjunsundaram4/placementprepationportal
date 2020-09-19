@@ -8,6 +8,7 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
 }
 
 .header {
@@ -167,7 +168,7 @@ p1 {
     .sidenav {
       padding-top: 20px;
       background-color: #FFBDA5;
-      height: 155%;
+      height: 85vh;
       max-width: 100%;
     }
     
